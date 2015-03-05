@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Blendler Slideshow</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="Blendle, Slideshow, Sandesh Damkondwar, Interactive Slideshow" />
+
+        <!-- Bootstrap Style -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+        <!-- Custom Stylesheets -->
+        <link rel="stylesheet" href="css/style.css" />
+
+    </head>
+    <body class="no-sidebar" ng-app="BlendleApp">
+
+        <!-- Header -->
+        <header>Logo</header>
+
+        <!-- Body -->
+        <!-- Avoid FOUC -->
+        <style>
+            .slideshow-app {
+                display: none;
+            }
+        </style>
+        <div class="slideshow-app" ng-view></div>
+
+        <!-- Footer -->
+        <footer>Copyright info</footer>
+
+        <!-- jQuery -->
+        <script src="app/libs/jquery.min.js"></script>
+
+        <!-- Bootstrap JS -->
+        <script src="app/libs/bootstrap.min.js"></script>
+
+        <!-- Angular & Dependencies-->
+        <script src="app/libs/angular.min.js"></script>
+        <script src="app/libs/angular-route.min.js"></script>
+
+        <!-- App -->
+        <script src="app/app.js"></script>
+        <script src="app/controllers.js"></script>
+        <script src="app/services.js"></script>
+    </body>
+</html>
