@@ -4,12 +4,17 @@
 (function () {
     "use strict";
 
-    angular.module('BlendleApp', ['ngRoute'])
+    angular.module('BlendleApp', ['ngRoute', 'LocalStorageModule'])
         .config(['$routeProvider', routeProvider])
-        .config(['$locationProvider', locationProvider]);
+        .config(['$locationProvider', locationProvider])
+        .config(['localStorageServiceProvider', localStorageService]);
 
     function locationProvider ($locationProvider) {
         $locationProvider.hashPrefix("!");
+    }
+
+    function localStorageService (localStorageServiceProvider) {
+        localStorageServiceProvider.setPrefix('blendle');
     }
 
     function routeProvider ($routeProvider) {
