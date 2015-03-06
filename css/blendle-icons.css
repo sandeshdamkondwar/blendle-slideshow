@@ -1,0 +1,37 @@
+@font-face {
+    font-family: blendle;
+    src: url(../fonts/blendle/blendle.eot); /* here you go, IE */
+    src: local(blendle), url(../fonts/blendle/blendle.eot?#iefix) format("embedded-opentype"),
+        url(../fonts/blendle/blendle.woff) format("woff"),
+        url(../fonts/blendle/blendle.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+.blendle-icon:before {
+    font-family: blendle;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    text-indent: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    vertical-align: middle;
+    top: -1px;
+    padding-right: 6px;
+}
+
+.blendle-icon.browse:before {
+    content: "\E01F";
+}
+
+.blendle-icon.notification:before {
+    content: "\E002";
+}
+
+.blendle-icon.pinned:before {
+    content: "\E028";
+}
