@@ -13,6 +13,10 @@ body {
     border-left: 1px solid #E7E7E7;
 }
 
+.navbar-default .navbar-toggle {
+    background: #EEE;
+}
+
 .logo {
     padding: 12px 15px;
     cursor: pointer;
