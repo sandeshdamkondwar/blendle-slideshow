@@ -51,6 +51,10 @@ body {
 
 /* Media queries */
 @media (min-width: 768px) {
+    .navbar-toggle {
+        display: none;
+    }
+
     .navbar-default .navbar-nav > .open > a,
     .navbar-default .navbar-nav > .open > a:focus,
     .navbar-default .navbar-nav > .open > a:hover {
